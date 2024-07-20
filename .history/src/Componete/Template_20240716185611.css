@@ -1,0 +1,148 @@
+/* Template.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 80px; /* Ajuste conforme necessário */
+}
+
+h1 {
+    text-align: center;
+    color: #1E1F23;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #1E1F23;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    font-size: 1.2em;
+}
+
+.table tbody tr {
+    transition: background 0.3s;
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    background: #325aa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.buttons button:hover {
+    background: #1E1F23;
+    transform: translateY(-2px);
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1E1F23;
+}
+
+.icon-cross {
+    cursor: pointer;
+    color: #F81D2D;
+}
+
+.forms input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forms input:focus {
+    border-color: #325aa8;
+    outline: none;
+}
+
+.brcode {
+    margin-top: 90px;
+}
+
+h5 {
+    margin: 0;
+}
+
+.notes {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}

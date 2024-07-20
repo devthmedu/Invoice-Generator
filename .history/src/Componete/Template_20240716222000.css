@@ -1,0 +1,156 @@
+/* Template.css */
+
+/* Estilo da Contêiner PDF */
+.pdf-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8em;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #2980b9;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  margin: 25px 0 15px;
+  font-size: 2em;
+}
+
+h3 {
+  color: #e74c3c;
+  font-size: 1.5em;
+}
+
+/* Parágrafos */
+p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Lista de Produtos */
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.product-list li:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+}
+
+.product-list span {
+  flex-grow: 1;
+  font-size: 1.2em;
+}
+
+/* Botões de Edição e Remoção */
+.product-list button {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.product-list button:hover {
+  color: #c0392b;
+}
+
+/* Botões de Adicionar e Imprimir */
+.add-product-button,
+.print-button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #48ede5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 15px 5px;
+  font-size: 1.2em;
+}
+
+.add-product-button:hover,
+.print-button:hover {
+  background-color: #39b2c4;
+  transform: scale(1.05);
+}
+
+/* Estilo de Inputs */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* QR Code */
+.qr-code {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Mensagem de Sucesso */
+.success-message {
+  color: #28a745;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #e7f9e7;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .add-product-button,
+  .print-button {
+    width: 100%;
+  }
+}

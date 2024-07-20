@@ -1,0 +1,122 @@
+/* Global Styles */
+:root {
+    --background-color: #f4f4f4;
+    --container-max-width: 900px;
+    --container-padding: 30px;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --text-color: #333;
+    --primary-color: #48ede5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Container Styles */
+.pdf-container {
+    max-width: var(--container-max-width);
+    margin: 40px auto;
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: #ffffff;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Typography Styles */
+h1, h2, h3 {
+    margin: 0 0 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+/* Barcode Input Styles */
+.barcode-input {
+    padding: 12px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.barcode-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(72, 237, 229, 0.5);
+}
+
+/* Barcode Format Styles */
+.barcode-format {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Barcode Display Styles */
+.barcode-display {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Button Styles */
+.copy-button,
+.clear-button {
+    padding: 12px 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.copy-button:hover,
+.clear-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .pdf-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

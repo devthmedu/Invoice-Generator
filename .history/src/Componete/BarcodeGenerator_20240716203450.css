@@ -1,0 +1,53 @@
+/* BarcodeGenerator.css */
+
+.barcode-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.barcode-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.barcode-input:focus {
+  border-color: #48ede5;
+  outline: none;
+}
+
+.barcode-display {
+  margin: 20px 0;
+}
+
+.error-message {
+  color: red;
+}
+
+.clear-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #48ede5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+  background-color: #36b8c2;
+}

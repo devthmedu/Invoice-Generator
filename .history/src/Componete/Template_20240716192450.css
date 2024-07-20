@@ -1,0 +1,139 @@
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/* Title styles */
+h1 {
+    text-align: center;
+    color: #48ede5;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Client information styles */
+.client-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.client-info p {
+    margin: 5px 0;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #48ede5;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    font-size: 1.1em;
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Notes styles */
+.notes {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 10px 15px;
+    background: #48ede5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.button-group button:hover {
+    background: #36b4d3;
+    transform: scale(1.05);
+}
+
+/* Dialog title styles */
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #48ede5;
+}
+
+/* Form styles */
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #48ede5;
+    outline: none;
+}
+
+.forms input::placeholder {
+    color: #aaa;
+}
+
+/* Icon styles */
+.icon-cross {
+    cursor: pointer;
+}

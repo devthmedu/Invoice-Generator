@@ -1,0 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Fundo leve */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto; /* Centralização */
+  padding: 20px;
+  background: white; /* Estilo de cartão */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Texto escuro */
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Borda leve */
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 16px;
+  width: 100%; /* Largura total */
+}
+
+input::placeholder {
+  color: #aaa; /* Cor do placeholder */
+  font-style: italic; /* Itálico para o placeholder */
+}
+
+input:disabled {
+  background-color: #e9ecef; /* Cinza claro */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Centralização dos botões */
+  margin-top: 20px; /* Espaço acima dos botões */
+}
+
+button {
+  background-color: #48ede5; /* Cor primária */
+  color: white; /* Texto branco */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin: 0 10px; /* Espaçamento lateral entre botões */
+}
+
+button:hover {
+  background-color: #36b4d3; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom leve */
+}
+
+button:disabled {
+  background-color: #c0c0c0; /* Cinza quando desabilitado */
+}

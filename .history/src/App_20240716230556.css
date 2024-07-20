@@ -1,0 +1,205 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em; /* Increased font size for prominence */
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.inputs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly more rounded corners */
+  font-size: 16px;
+  min-width: 220px; /* Minimum width for inputs */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.input-field:focus {
+  border-color: #48ede5; /* Highlight on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Subtle glow */
+}
+
+.submit-button {
+  padding: 12px 20px; /* Increased padding */
+  background-color: #48ede5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #36b8c2;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.product-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap */
+}
+
+.product-form input {
+  padding: 12px; /* Increased padding for product inputs */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%; /* Full width for product inputs */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Product List Styles */
+.product-list {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px; /* Consistent font size */
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+/* Barcode and PDF Container Styles */
+.barcode-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Button Styles */
+.back-button {
+  margin-top: 20px;
+  padding: 12px 20px; /* Increased padding */
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e55b5b;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-bottom: 10px;
+    width: 100%; /* Full width on small screens */
+  }
+
+  .product-list, .container {
+    padding: 20px; /* Less padding for smaller screens */
+  }
+
+  .submit-button, .back-button {
+    width: 100%; /* Full width for buttons */
+  }
+}
+
+@media (max-width: 400px) {
+  .submit-button, .back-button {
+    padding: 10px; /* Smaller padding on extra small screens */
+  }
+
+  .title {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.input-field {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.submit-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.export-button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-list {
+  margin: 20px 0;
+}

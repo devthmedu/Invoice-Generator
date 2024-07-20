@@ -1,0 +1,102 @@
+/* Global Styles */
+:root {
+    --background-color: #f4f4f4;
+    --container-background: #ffffff;
+    --primary-color: #48ede5;
+    --error-color: #e74c3c;
+    --text-color: #333;
+    --border-radius: 6px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Barcode Container */
+.barcode-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--container-background);
+    text-align: center;
+}
+
+/* Title Styles */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+.barcode-input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.barcode-input:focus {
+    border-color: var(--primary-color);
+}
+
+/* Barcode Format Styles */
+.barcode-format {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Barcode Display Styles */
+.barcode-display {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+/* Error Message Styles */
+.error-message {
+    color: var(--error-color);
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Button Styles */
+.copy-button,
+.clear-button {
+    padding: 12px 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.copy-button:hover,
+.clear-button:hover {
+    background-color: #39b2c4;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .barcode-container {
+        padding: 20px;
+    }
+
+    .barcode-input {
+        width: 100%;
+    }
+}

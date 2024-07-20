@@ -1,0 +1,263 @@
+/* Container geral */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #48ede5;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Informações do cliente */
+.client-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Método de pagamento */
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #48ede5;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Notas */
+.notes {
+    margin-top: 20px;
+    color: #333;
+}
+
+.notes strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botões */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.print-button, .add-button, .remove-button {
+    padding: 10px 15px;
+    background: #48ede5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.print-button:hover, .add-button:hover, .remove-button:hover {
+    background: #36b4d3;
+}
+
+/* Título do diálogo */
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #48ede5;
+}
+
+/* Formulários */
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #48ede5;
+    outline: none;
+}
+
+/* Ícones nos produtos */
+.table td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.table td:first-child svg {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+}
+
+/* Estilo de remover produto */
+.remove-button {
+    background: transparent;
+    color: #e74c3c; /* Cor do ícone de remover */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.remove-button:hover {
+    color: #c0392b; /* Cor ao passar o mouse */
+}
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+  background-color: #f4f9fc; /* Fundo suave */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px; /* Largura aumentada para melhor usabilidade */
+  margin: 100px auto; /* Centralização */
+  padding: 40px 30px; /* Adicionando padding */
+  background: white; /* Estilo de cartão */
+  border-radius: 20px; /* Cantos arredondados mais pronunciados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais profunda */
+  transition: transform 0.3s; /* Transição suave */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px; /* Centraliza o logo */
+  max-width: 160px; /* Ajusta o tamanho do logo */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Texto mais escuro */
+  font-size: 28px; /* Tamanho de fonte aumentado */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-weight: 700; /* Título em negrito */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Layout em coluna para os inputs */
+}
+
+.inputs {
+  margin-bottom: 30px; /* Mais espaço abaixo dos inputs */
+}
+
+.input-field {
+  padding: 16px; /* Padding confortável */
+  border: 2px solid #ddd; /* Borda mais espessa */
+  border-radius: 10px; /* Cantos arredondados */
+  font-size: 18px; /* Tamanho de fonte maior */
+  width: 100%; /* Largura total */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna suave */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+  margin-bottom: 20px; /* Espaço entre os inputs */
+}
+
+.input-field:focus {
+  border-color: #48ede5; /* Cor de destaque ao focar */
+  outline: none; /* Remove o contorno padrão */
+  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Efeito de brilho */
+}
+
+.input-field::placeholder {
+  color: #bbb; /* Placeholder cinza claro */
+  font-style: italic; /* Estilo itálico para o placeholder */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+}
+
+.submit-button {
+  background-color: #48ede5; /* Cor primária */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 14px 28px; /* Padding */
+  font-size: 18px; /* Tamanho de fonte maior */
+  cursor: pointer; /* Muda para ponteiro ao passar o mouse */
+  transition: background 0.3s, transform 0.3s; /* Transições suaves */
+  display: flex; /* Flex para alinhar ícone */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.submit-button:hover {
+  background-color: #36b4d3; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom leve */
+}
+
+.submit-button:disabled {
+  background-color: #c0c0c0; /* Cinza quando desabilitado */
+  cursor: not-allowed; /* Cursor de não permitido */
+}
+
+.submit-button svg {
+  margin-left: 8px; /* Espaço entre texto e ícone */
+}
+
+input:disabled {
+  background-color: #f7f7f7; /* Fundo claro para desabilitados */
+  color: #aaa; /* Texto mais claro */
+}

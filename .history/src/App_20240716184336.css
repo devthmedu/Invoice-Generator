@@ -1,0 +1,78 @@
+.body-main {
+    background: #ffffff;
+    border: 15px solid #1E1F23;
+    margin: 30px 0;
+    padding: 40px 30px;
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Aumentado para melhor legibilidade */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.main thead {
+    background: #1E1F23;
+    color: #ffffff;
+}
+
+.img {
+    height: 100px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+h1 {
+    text-align: center;
+    color: #1E1F23;
+    font-size: 24px; /* Tamanho maior para destaque */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.brcode {
+    margin-top: 90px;
+}
+
+.bbc {
+    margin-left: auto; /* Para alinhar à direita */
+    text-align: right; /* Alinhamento à direita */
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px; /* Adicionado espaçamento */
+}
+
+input {
+    margin: 10px 0; /* Espaçamento vertical */
+    border: 1px solid #2283c8;
+    height: 50px;
+    width: 200px; /* Largura aumentada */
+    padding: 0 10px; /* Espaçamento interno */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input:focus {
+    border-color: #1E1F23; /* Mudança de cor ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+.buttons button {
+    width: 120px; /* Largura aumentada */
+    height: 45px; /* Altura ajustada */
+    background: #325aa8;
+    color: #ffffff;
+    border: none; /* Removido o estilo da borda */
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer; /* Muda o cursor para indicar clicável */
+    transition: background 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.buttons button:hover {
+    background: #1E1F23;
+    color: #ffffff;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}

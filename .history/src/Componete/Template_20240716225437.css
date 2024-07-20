@@ -1,0 +1,163 @@
+/* Template.css */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Arial', sans-serif; /* Set a modern font */
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px; /* Add spacing below logo */
+}
+
+.logo img {
+  max-width: 150px; /* Limit logo size */
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50; /* Darker title color */
+  font-size: 2em; /* Enhanced title size */
+  margin: 10px 0; /* Margin around title */
+}
+
+.client-info {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for client info */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.payment-method {
+  margin: 15px 0;
+  font-weight: bold; /* Highlight payment method */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: left;
+}
+
+.table th {
+  background-color: #3498db; /* Brand color for headers */
+  color: #fff; /* White text for contrast */
+}
+
+.text-right {
+  text-align: right;
+}
+
+.remove-button {
+  background-color: transparent;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: bold; /* Make remove button text bold */
+}
+
+.remove-button:hover {
+  text-decoration: underline;
+}
+
+.notes {
+  margin: 20px 0;
+  font-size: 0.9em;
+  color: #555; /* Slightly darker color for notes */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.print-button, .add-button {
+  padding: 12px 20px; /* Larger button padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #48ede5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+  max-width: 200px;
+  margin: 5px;
+  font-weight: bold; /* Bold button text */
+}
+
+.print-button:hover, .add-button:hover {
+  background-color: #39b2c4;
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms input {
+  margin: 10px 0;
+  padding: 12px; /* Increased input padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1em; /* Larger font size for input */
+}
+
+.icon-cross {
+  cursor: pointer;
+  color: #e74c3c;
+  font-size: 1.2em; /* Slightly larger icon */
+}
+
+.icon-cross:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .forms {
+    align-items: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .print-button, .add-button {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.7em; /* Adjusted title size for mobile */
+  }
+
+  .table th, .table td {
+    padding: 10px; /* Smaller padding on mobile */
+  }
+
+  .client-info {
+    padding: 8px; /* Less padding for mobile */
+  }
+}

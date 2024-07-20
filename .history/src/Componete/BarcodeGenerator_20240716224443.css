@@ -1,0 +1,121 @@
+/* Barcode Input Styles */
+.barcode-input {
+  padding: 12px; /* Increased padding for comfort */
+  width: 80%;
+  margin-bottom: 15px; /* Slightly increased margin */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* More rounded corners */
+  font-size: 16px; /* Increased font size */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.barcode-input:focus {
+  border-color: #48ede5; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Subtle glow */
+}
+
+/* Barcode Format Styles */
+.barcode-format {
+  margin-bottom: 15px; /* Increased margin for spacing */
+  font-weight: 500; /* Medium weight for clarity */
+}
+
+/* Barcode Display Styles */
+.barcode-display {
+  margin: 25px 0; /* Increased margin for separation */
+  padding: 15px; /* Added padding for a cleaner look */
+  background-color: #f9f9f9; /* Light background for visibility */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #e74c3c; /* Slightly darker red for better visibility */
+  margin-top: 10px; /* Space above the error message */
+  font-weight: 500; /* Medium weight for emphasis */
+}
+
+/* Button Styles */
+.copy-button,
+.clear-button {
+  padding: 12px 18px; /* Increased padding for comfort */
+  margin-top: 15px; /* Increased margin for separation */
+  border: none;
+  border-radius: 6px; /* More rounded corners */
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px; /* Consistent font size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.copy-button:hover,
+.clear-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+/* Global Styles */
+:root {
+    --background-color: #f4f4f4;
+    --container-max-width: 900px;
+    --container-padding: 30px;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --text-color: #333;
+    --primary-color: #48ede5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Container Styles */
+.pdf-container {
+    max-width: var(--container-max-width);
+    margin: 40px auto;
+    padding: var(--container-padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: #ffffff;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Typography Styles */
+h1, h2, h3 {
+    margin: 0 0 20px; /* Consistent bottom margin */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .pdf-container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

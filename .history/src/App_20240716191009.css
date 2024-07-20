@@ -1,0 +1,68 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light background */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto; /* Centering */
+  padding: 20px;
+  background: white; /* Card style */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Dark text */
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  width: 100%; /* Full width */
+}
+
+input:disabled {
+  background-color: #e9ecef; /* Light gray */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #48ede5; /* Primary color */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #36b4d3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+button:disabled {
+  background-color: #c0c0c0; /* Gray when disabled */
+}

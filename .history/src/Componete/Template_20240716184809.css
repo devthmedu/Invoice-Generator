@@ -1,0 +1,91 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1E1F23;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #1E1F23;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background: #f5f5f5;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button,
+.print-button,
+.add-product-button {
+    padding: 10px 15px;
+    background: #325aa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.buttons button:hover,
+.print-button:hover,
+.add-product-button:hover {
+    background: #1E1F23;
+    transform: scale(1.05);
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-cross {
+    cursor: pointer;
+    color: #FF3D00;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre inputs */
+}
+
+.forms input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #325aa8;
+    outline: none;
+}

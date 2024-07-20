@@ -1,0 +1,85 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9f5f9; /* Fundo suave */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto; /* Centralização */
+  padding: 30px;
+  background: white; /* Estilo de cartão */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+}
+
+.title {
+  text-align: center;
+  color: #222; /* Texto escuro */
+  font-size: 24px; /* Tamanho da fonte maior */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  font-weight: bold; /* Negrito */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 16px;
+  width: 100%; /* Largura total */
+  transition: border-color 0.3s; /* Transição suave */
+}
+
+input:focus {
+  border-color: #48ede5; /* Cor ao focar no input */
+  outline: none; /* Remove a borda padrão do navegador */
+}
+
+input::placeholder {
+  color: #bbb; /* Cor do placeholder */
+  font-style: italic; /* Itálico para o placeholder */
+}
+
+input:disabled {
+  background-color: #f1f1f1; /* Cinza claro */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Centralização dos botões */
+  margin-top: 20px; /* Espaço acima dos botões */
+}
+
+button {
+  background-color: #48ede5; /* Cor primária */
+  color: white; /* Texto branco */
+  border: none;
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  margin: 0 10px; /* Espaçamento lateral entre botões */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+button:hover {
+  background-color: #36b4d3; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom leve */
+}
+
+button:disabled {
+  background-color: #c0c0c0; /* Cinza quando desabilitado */
+  cursor: not-allowed; /* Cursor de não permitido */
+}

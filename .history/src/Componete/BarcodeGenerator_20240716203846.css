@@ -1,0 +1,85 @@
+/* BarcodeGenerator.css */
+
+.barcode-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em; /* Responsive font size */
+}
+
+.barcode-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Full width */
+  max-width: 300px; /* Max width for larger screens */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.barcode-input:focus {
+  border-color: #48ede5;
+  outline: none;
+}
+
+.barcode-display {
+  margin: 20px 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em; /* Slightly smaller font for error messages */
+}
+
+.clear-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #48ede5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for better accessibility */
+  max-width: 150px; /* Limit the button width */
+}
+
+.clear-button:hover {
+  background-color: #36b8c2;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .barcode-container {
+    margin: 10px;
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Smaller title for mobile */
+  }
+
+  .barcode-input {
+    width: 100%; /* Ensure full width on small screens */
+  }
+
+  .clear-button {
+    width: 100%; /* Full width for button on mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  .clear-button {
+    padding: 8px; /* Smaller padding on extra small screens */
+    font-size: 14px; /* Smaller font size */
+  }
+}

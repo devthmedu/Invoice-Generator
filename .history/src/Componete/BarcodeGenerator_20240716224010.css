@@ -1,0 +1,58 @@
+.barcode-input {
+  padding: 12px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Lighter border for a softer look */
+  border-radius: 6px; /* Slightly larger border-radius */
+  font-size: 1em; /* Improved readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.barcode-input:focus {
+  border-color: #007bff; /* Highlight on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+.barcode-format {
+  margin-bottom: 15px;
+  font-size: 1em; /* Consistent font size */
+  color: #555; /* Slightly darker color for contrast */
+}
+
+.barcode-display {
+  margin: 25px 0;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for display area */
+  border-radius: 6px; /* Consistent border-radius */
+  background-color: #f9f9f9; /* Light background for visibility */
+  font-size: 1.1em; /* Slightly larger text */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em; /* Slightly smaller for emphasis */
+  margin-top: 5px;
+}
+
+.copy-button, .clear-button {
+  padding: 12px 18px; /* Increased padding for better clickability */
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px; /* Consistent border-radius */
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  cursor: pointer;
+  font-size: 1em; /* Improved readability */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.copy-button:hover, .clear-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.copy-button:active, .clear-button:active {
+  transform: translateY(0); /* Reset on click */
+}

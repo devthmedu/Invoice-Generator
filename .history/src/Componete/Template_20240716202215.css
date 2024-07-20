@@ -1,0 +1,140 @@
+/* Container styles */
+.container {
+    max-width: 800px; /* Ideal width */
+    margin: 20px auto; /* Centering */
+    padding: 30px; /* Generous padding */
+    background: #ffffff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    margin-bottom: 30px; /* Larger space below the logo */
+}
+
+.logo img {
+    max-width: 120px; /* Increased logo size */
+}
+
+/* Title styles */
+h1 {
+    text-align: center;
+    color: #48ede5; /* Title color */
+    font-size: 32px; /* Increased font size */
+    margin-bottom: 25px; /* Space below the title */
+}
+
+/* Client information styles */
+.client-info {
+    margin-bottom: 25px; /* Space below client info */
+    padding: 15px; /* Increased padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Subtle border */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+}
+
+.client-info p {
+    margin: 8px 0; /* More space between paragraphs */
+}
+
+/* Table styles */
+.table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+    margin-top: 25px; /* Space above the table */
+}
+
+.table thead {
+    background: #48ede5; /* Header background */
+    color: #ffffff; /* White text */
+}
+
+.table th,
+.table td {
+    padding: 15px; /* More comfortable padding */
+    text-align: left; /* Left alignment */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+.table th {
+    font-size: 1.2em; /* Larger size for header */
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1; /* Hover effect on rows */
+}
+
+/* Notes styles */
+.notes {
+    margin-top: 25px; /* Space above notes */
+    font-style: italic; /* Italic style */
+    color: #555; /* Note color */
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 25px; /* Space above button group */
+}
+
+.button-group button {
+    padding: 12px 18px; /* Comfortable padding */
+    background: #48ede5; /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.button-group button:hover {
+    background: #36b4d3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Dialog title styles */
+.dialog-title {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Center vertically */
+}
+
+.dialog-title .hed {
+    font-size: 1.6em; /* Dialog title size */
+    font-weight: bold; /* Bold text */
+    color: #48ede5; /* Title color */
+}
+
+/* Form styles */
+.forms {
+    display: flex;
+    flex-direction: column; /* Column layout for inputs */
+}
+
+.forms input {
+    width: 100%; /* Full width */
+    padding: 12px; /* Comfortable padding */
+    margin: 8px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Standard border */
+    border-radius: 8px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.forms input:focus {
+    border-color: #48ede5; /* Highlight color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.forms input::placeholder {
+    color: #aaa; /* Lighter placeholder */
+}
+
+/* Icon styles */
+.icon-cross {
+    cursor: pointer; /* Pointer cursor */
+}

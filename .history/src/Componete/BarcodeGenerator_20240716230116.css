@@ -1,0 +1,28 @@
+/* Centralizando botões e QR Code */
+.button-group {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    margin-top: 20px; /* Adiciona espaço acima */
+}
+
+.add-product-button, .print-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #48ede5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
+
+.add-product-button:hover, .print-button:hover {
+    background-color: #39b2c4;
+}
+
+/* Centralizando o QR Code */
+.qr-code-container {
+    display: flex;
+    justify-content: center; /* Centraliza o QR Code */
+    margin: 25px 0; /* Espaço em cima e embaixo */
+}

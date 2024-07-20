@@ -1,0 +1,142 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f4f9fc; /* Soft background */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Added for absolute positioning of ::before */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('path/to/your/pattern.png'); /* Light pattern image */
+  opacity: 0.05; /* Subtle pattern */
+  z-index: 0; /* Place the pattern behind the content */
+}
+
+.container {
+  max-width: 600px; /* Ideal width for usability */
+  margin: 100px auto; /* Centering */
+  padding: 40px 30px; /* Generous padding */
+  background: white; /* Card style */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px; /* Center the logo */
+  max-width: 160px; /* Adjust logo size */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Dark text */
+  font-size: 28px; /* Large font size */
+  margin-bottom: 20px; /* Space below title */
+  font-weight: 700; /* Bold title */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Column layout for inputs */
+}
+
+.inputs {
+  margin-bottom: 30px; /* More space below inputs */
+}
+
+.input-field {
+  padding: 10px; /* Increased padding for comfort */
+  border: 2px solid #ddd; /* Thicker border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Appropriate font size */
+  width: 100%; /* Full width */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft inset shadow */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  margin-bottom: 20px; /* Space between inputs */
+}
+
+.input-field:focus {
+  border-color: #48ede5; /* Highlight color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Glow effect */
+}
+
+.input-field::placeholder {
+  color: #aaa; /* Lighter placeholder */
+  font-style: italic; /* Italic style for placeholder */
+}
+
+.barcode-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.submit-button {
+  background-color: #48ede5; /* Primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 14px 28px; /* Comfortable padding */
+  font-size: 18px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+  display: flex; /* Flex to align icon */
+  align-items: center; /* Center vertically */
+}
+
+.submit-button:hover {
+  background-color: #36b4d3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.submit-button:disabled {
+  background-color: #c0c0c0; /* Gray when disabled */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+.submit-button svg {
+  margin-left: 8px; /* Space between text and icon */
+}
+
+input:disabled {
+  background-color: #f7f7f7; /* Light background for disabled */
+  color: #aaa; /* Lighter text */
+}
+
+.pdf-container {
+  text-align: center; /* Center PDF container */
+}
+
+.back-button {
+  padding: 10px; /* Padding for back button */
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.remove-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+}

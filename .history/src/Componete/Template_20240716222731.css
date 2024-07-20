@@ -1,0 +1,157 @@
+/* Template.css */
+
+.pdf-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  position: relative;
+  text-align: center; /* Center the logo */
+}
+
+.pdf-logo {
+  max-width: 150px; /* Adjust logo size */
+  margin: 0 auto 20px; /* Center and add margin */
+}
+
+.pdf-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to right, #007BFF, #00C6FF); /* Change this if your logo has specific colors */
+  border-radius: 10px 10px 0 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007BFF; /* Main brand color */
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007BFF; /* Brand color */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.product-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.product-list li span {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+button {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px);
+}
+
+.add-product-button {
+  background-color: #28a745; /* Success color */
+}
+
+.add-product-button:hover {
+  background-color: #218838;
+}
+
+.print-button {
+  background-color: #ffc107; /* Warning color */
+}
+
+.print-button:hover {
+  background-color: #e0a800;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007BFF; /* Highlight color */
+  outline: none;
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-close {
+  cursor: pointer;
+  color: #e74c3c; /* Error color */
+}
+
+.icon-close:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .pdf-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

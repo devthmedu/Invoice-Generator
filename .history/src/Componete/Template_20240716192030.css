@@ -1,0 +1,76 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.notes {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.print-button, .add-button {
+  background-color: #48ede5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.print-button:hover, .add-button:hover {
+  background-color: #36b4d3;
+  transform: scale(1.05);
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forms input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+}
+
+.forms input::placeholder {
+  color: #aaa;
+}
+
+.add-button {
+  background-color: #48ede5;
+}
+
+.add-button:hover {
+  background-color: #36b4d3;
+}

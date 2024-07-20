@@ -1,0 +1,159 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 200px; /* Minimum width for inputs */
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #48ede5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #36b8c2;
+}
+
+.product-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-list {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+.barcode-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pdf-container {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #e55b5b;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-bottom: 10px;
+    width: 100%; /* Full width on small screens */
+  }
+
+  .product-list, .pdf-container {
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  .submit-button {
+    width: 100%; /* Full width for the button */
+  }
+
+  .back-button {
+    width: 100%; /* Full width for the back button */
+  }
+}
+
+@media (max-width: 400px) {
+  .submit-button, .back-button {
+    padding: 8px; /* Smaller padding on extra small screens */
+  }
+
+  .title {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,197 @@
+/* Container geral */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #48ede5;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Informações do cliente */
+.client-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Método de pagamento */
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tabela */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #48ede5;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Notas */
+.notes {
+    margin-top: 20px;
+    color: #333;
+}
+
+.notes strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botões */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.print-button, .add-button, .remove-button {
+    padding: 10px 15px;
+    background: #48ede5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.print-button:hover, .add-button:hover, .remove-button:hover {
+    background: #36b4d3;
+}
+
+/* Título do diálogo */
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #48ede5;
+}
+
+/* Formulários */
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #48ede5;
+    outline: none;
+}
+
+/* Ícones nos produtos */
+.table td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.table td:first-child svg {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+}
+
+/* Estilo de remover produto */
+.remove-button {
+    background: transparent;
+    color: #e74c3c; /* Cor do ícone de remover */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.remove-button:hover {
+    color: #c0392b; /* Cor ao passar o mouse */
+}
+/* Input fields */
+input {
+  padding: 14px 16px; /* Added horizontal padding for better touch targets */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  width: 100%; /* Full width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  background-color: #f9f9f9; /* Light background for inputs */
+  color: #333; /* Dark text for readability */
+}
+
+/* Focus state */
+input:focus {
+  border-color: #48ede5; /* Focus border color */
+  box-shadow: 0 0 8px rgba(72, 237, 229, 0.5); /* Stronger focus shadow */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styles */
+input::placeholder {
+  color: #bbb; /* Placeholder color */
+  font-style: italic; /* Italic style for placeholder */
+}
+
+/* Disabled input */
+input:disabled {
+  background-color: #f1f1f1; /* Light gray for disabled */
+  color: #888; /* Darker text for disabled state */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+/* Hover effect for inputs */
+input:hover {
+  border-color: #48b0d1; /* Slightly darker border on hover */
+}

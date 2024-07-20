@@ -1,0 +1,113 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* Alterado para branco puro para melhor contraste */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #1E1F23;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    font-size: 1.1em;
+    font-weight: bold; /* Aumentado para destaque */
+}
+
+.table tbody tr:hover {
+    background: #f5f5f5; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Alinhamento flexível para os botões */
+    justify-content: flex-end; /* Alinhamento à direita */
+}
+
+.buttons button {
+    padding: 10px 15px;
+    background: #325aa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s; /* Transição para efeito de zoom */
+    margin-left: 10px; /* Espaçamento entre botões */
+}
+
+.buttons button:hover {
+    background: #1E1F23;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px; /* Espaçamento inferior */
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1E1F23; /* Cor do título */
+}
+
+.icon-cross {
+    cursor: pointer;
+    color: #FF3D00; /* Cor chamativa para o ícone de fechar */
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os inputs se ajustem em várias linhas */
+}
+
+.forms input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #325aa8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(50, 90, 168, 0.5); /* Sombra ao focar */
+}
+
+.brcode {
+    margin-top: 90px;
+}
+
+.h4 {
+    margin: 20px 0;
+    font-size: 1.2em; /* Tamanho aumentado para destaque */
+}
+
+h5 {
+    margin: 0;
+    font-weight: normal; /* Peso de fonte normal para subtítulos */
+    color: #333; /* Cor mais suave para os subtítulos */
+}

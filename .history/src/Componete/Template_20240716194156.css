@@ -1,0 +1,139 @@
+/* Container styles */
+.container {
+    max-width: 800px; /* Largura ideal */
+    margin: 20px auto; /* Centralização */
+    padding: 30px; /* Padding generoso */
+    background: #ffffff; /* Fundo branco */
+    border-radius: 15px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    margin-bottom: 30px; /* Espaço maior abaixo do logo */
+}
+
+.logo img {
+    max-width: 120px; /* Aumentando o tamanho do logo */
+}
+
+/* Title styles */
+h1 {
+    text-align: center;
+    color: #48ede5; /* Cor do título */
+    font-size: 32px; /* Tamanho de fonte aumentado */
+    margin-bottom: 25px; /* Espaço abaixo do título */
+}
+
+/* Client information styles */
+.client-info {
+    margin-bottom: 25px; /* Espaço abaixo das informações do cliente */
+    padding: 15px; /* Padding aumentado */
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    border-radius: 8px; /* Cantos arredondados */
+    border: 1px solid #ddd; /* Borda sutil */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+.client-info p {
+    margin: 8px 0; /* Mais espaço entre os parágrafos */
+}
+
+/* Table styles */
+.table {
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Elimina espaços entre as células */
+    margin-top: 25px; /* Espaço acima da tabela */
+}
+
+.table thead {
+    background: #48ede5; /* Fundo do cabeçalho */
+    color: #ffffff; /* Texto branco */
+}
+
+.table th, .table td {
+    padding: 15px; /* Padding mais confortável */
+    text-align: left; /* Alinhamento à esquerda */
+    border-bottom: 1px solid #ddd; /* Borda inferior */
+}
+
+.table th {
+    font-size: 1.2em; /* Tamanho maior para cabeçalho */
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1; /* Efeito hover nas linhas */
+}
+
+/* Notes styles */
+.notes {
+    margin-top: 25px; /* Espaço acima das notas */
+    font-style: italic; /* Estilo itálico */
+    color: #555; /* Cor das notas */
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre botões */
+    margin-top: 25px; /* Espaço acima do grupo de botões */
+}
+
+.button-group button {
+    padding: 12px 18px; /* Padding confortável */
+    background: #48ede5; /* Cor do botão */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background 0.3s ease, transform 0.2s; /* Transições suaves */
+}
+
+.button-group button:hover {
+    background: #36b4d3; /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom leve */
+}
+
+/* Dialog title styles */
+.dialog-title {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre título e botão */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.dialog-title .hed {
+    font-size: 1.6em; /* Tamanho do título da dialog */
+    font-weight: bold; /* Negrito */
+    color: #48ede5; /* Cor do título */
+}
+
+/* Form styles */
+.forms {
+    display: flex;
+    flex-direction: column; /* Layout em coluna para os inputs */
+}
+
+.forms input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Padding mais confortável */
+    margin: 8px 0; /* Espaço entre os inputs */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 8px; /* Cantos arredondados */
+    transition: border-color 0.3s; /* Transição suave ao focar */
+}
+
+.forms input:focus {
+    border-color: #48ede5; /* Cor de destaque ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.forms input::placeholder {
+    color: #aaa; /* Placeholder mais claro */
+}
+
+/* Icon styles */
+.icon-cross {
+    cursor: pointer; /* Cursor de ponteiro */
+}

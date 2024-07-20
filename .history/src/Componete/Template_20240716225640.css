@@ -1,0 +1,132 @@
+/* Template.css */
+
+.pdf-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.pdf-logo {
+  max-width: 150px;
+  margin: 0 auto 20px;
+  display: block; /* Center logo */
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  color: #34495e;
+  margin: 15px 0 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-list li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.product-list span {
+  flex-grow: 1; /* Allow span to grow */
+}
+
+.product-list div {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.add-product-button, .print-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #48ede5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+}
+
+.add-product-button:hover, .print-button:hover {
+  background-color: #39b2c4;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3498db; /* Button color */
+}
+
+button:hover {
+  color: #2980b9; /* Darker shade on hover */
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db; /* Focus color */
+  outline: none; /* Remove default outline */
+}
+
+@media (max-width: 600px) {
+  .pdf-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Responsive title size */
+  }
+
+  .add-product-button, .print-button {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .product-list li {
+    flex-direction: column; /* Stack items on mobile */
+    align-items: flex-start; /* Align left */
+  }
+}

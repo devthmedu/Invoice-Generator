@@ -1,0 +1,168 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Container Principal */
+.pdf-container {
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    text-align: center;
+}
+
+/* Logo */
+.pdf-logo {
+    max-width: 150px;
+    margin: 0 auto 20px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8A05BE; /* Roxo Nubank */
+}
+
+h2, h3 {
+    margin-top: 20px;
+    color: #8A05BE; /* Roxo Nubank */
+}
+
+/* Lista de Produtos */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* Borda leve */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fundo leve */
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-list li:hover {
+    background-color: #f1f1f1; /* Efeito hover */
+}
+
+.product-list li span {
+    flex-grow: 1;
+    font-weight: 500; /* Peso médio */
+}
+
+/* Botões */
+button {
+    background-color: #8A05BE; /* Roxo Nubank */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #6A04A8; /* Tom mais escuro */
+}
+
+/* Estilos Específicos para Botões */
+.add-product-button {
+    background-color: #28A745; /* Verde para adicionar */
+}
+
+.add-product-button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+.print-button {
+    background-color: #FFC107; /* Amarelo */
+}
+
+.print-button:hover {
+    background-color: #E0A800; /* Amarelo mais escuro */
+}
+
+/* Estilos de Input */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #8A05BE; /* Roxo de destaque */
+    outline: none;
+}
+
+/* Estilos de Mensagens de Erro */
+.error-message {
+    color: #e74c3c; /* Vermelho */
+}
+
+/* Estilo do QR Code */
+h2 {
+    margin-top: 40px;
+}
+
+/* Estilo para o Título do Diálogo */
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Fechar Ícone */
+.icon-close {
+    cursor: pointer;
+    color: #e74c3c; /* Vermelho */
+}
+
+.icon-close:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .pdf-container {
+        margin: 20px; /* Ajuste de margem em telas menores */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .product-list li {
+        flex-direction: column; /* Estilo em coluna em telas menores */
+        align-items: flex-start; /* Alinhamento à esquerda */
+    }
+}

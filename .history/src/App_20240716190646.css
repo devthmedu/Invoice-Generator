@@ -1,0 +1,70 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Cor de texto padrão */
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+.form {
+    background: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #48ede5; /* Cor do contorno */
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #1E1F23; /* Mudança de cor ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end; /* Alinha o botão à direita */
+}
+
+button {
+    background-color: #48ede5; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1E1F23; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+button:disabled {
+    background-color: #ccc; /* Cor do botão desabilitado */
+    cursor: not-allowed; /* Cursor de não permitido */
+}

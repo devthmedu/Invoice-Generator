@@ -1,0 +1,131 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9f5f9; /* Soft background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 500px;
+  margin: 100px auto; /* Centered */
+  padding: 40px; /* Increased padding for a spacious look */
+  background: white; /* Card style */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #222; /* Dark text */
+  font-size: 26px; /* Larger font size */
+  margin-bottom: 40px; /* Increased space below title */
+  font-weight: bold; /* Bold text */
+}
+
+/* Form structure */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+/* Input fields */
+input {
+  padding: 14px; /* Increased padding */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  width: 100%; /* Full width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input:focus {
+  border-color: #48ede5; /* Focus color */
+  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+input::placeholder {
+  color: #bbb; /* Placeholder color */
+  font-style: italic; /* Italic style for placeholder */
+}
+
+input:disabled {
+  background-color: #f1f1f1; /* Light gray for disabled */
+}
+
+/* Button group */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 30px; /* More space above buttons */
+}
+
+/* Button styles */
+button {
+  background-color: #48ede5; /* Primary color */
+  color: white; /* White text */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 14px 28px; /* Increased padding */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  margin: 0 12px; /* Lateral spacing between buttons */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: #36b4d3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Shadow increase on hover */
+}
+
+/* Disabled button */
+button:disabled {
+  background-color: #c0c0c0; /* Gray when disabled */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+/* Input fields */
+input {
+  padding: 14px 16px; /* Added horizontal padding for better touch targets */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  width: 100%; /* Full width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  background-color: #f9f9f9; /* Light background for inputs */
+  color: #333; /* Dark text for readability */
+}
+
+/* Focus state */
+input:focus {
+  border-color: #48ede5; /* Focus border color */
+  box-shadow: 0 0 8px rgba(72, 237, 229, 0.5); /* Stronger focus shadow */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styles */
+input::placeholder {
+  color: #bbb; /* Placeholder color */
+  font-style: italic; /* Italic style for placeholder */
+}
+
+/* Disabled input */
+input:disabled {
+  background-color: #f1f1f1; /* Light gray for disabled */
+  color: #888; /* Darker text for disabled state */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+/* Hover effect for inputs */
+input:hover {
+  border-color: #48b0d1; /* Slightly darker border on hover */
+}

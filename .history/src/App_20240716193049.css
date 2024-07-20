@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9f5f9; /* Light background */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px; /* Increased width for better usability */
+  margin: 100px auto; /* Centering */
+  padding: 40px;
+  background: white; /* Card style */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px; /* Center the logo */
+  max-width: 150px; /* Adjust logo size */
+}
+
+.title {
+  text-align: center;
+  color: #222; /* Dark text */
+  font-size: 26px; /* Increased font size */
+  margin-bottom: 20px; /* Space below title */
+  font-weight: bold; /* Bold title */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Column layout for inputs */
+}
+
+.inputs {
+  margin-bottom: 30px; /* More space below inputs */
+}
+
+.input-field {
+  padding: 14px 16px; /* Increased padding for comfort */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width */
+  transition: border-color 0.3s; /* Smooth transition */
+  margin-bottom: 15px; /* Space between inputs */
+}
+
+.input-field:focus {
+  border-color: #48ede5; /* Highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+}
+
+.submit-button {
+  background-color: #48ede5; /* Primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 12px 24px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: #36b4d3; /* Darker on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.submit-button:disabled {
+  background-color: #c0c0c0; /* Grey when disabled */
+  cursor: not-allowed; /* Not allowed cursor */
+}

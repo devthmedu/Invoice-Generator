@@ -1,0 +1,147 @@
+.body-main {
+    background: #ffffff;
+    border: 15px solid #1E1F23;
+    margin: 30px 0;
+    padding: 40px 30px;
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.main thead {
+    background: #1E1F23;
+    color: #ffffff;
+}
+
+.img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+h1 {
+    text-align: center;
+    color: #1E1F23;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.brcode {
+    margin-top: 90px;
+}
+
+.bbc {
+    margin-left: auto;
+    text-align: right;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+input {
+    margin: 10px 0;
+    border: 1px solid #2283c8;
+    height: 50px;
+    width: 200px;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Adicionada transição para box-shadow */
+}
+
+input:focus {
+    border-color: #1E1F23;
+    outline: none;
+    box-shadow: 0 0 5px rgba(50, 90, 168, 0.5); /* Sombra ao focar no input */
+}
+
+.buttons {
+    display: flex; /* Flex para alinhar os botões */
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background: #325aa8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background: #1E1F23;
+    transform: scale(1.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Para remover espaçamentos entre as células */
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Linha sutil abaixo das células */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Destaque ao passar o mouse */
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1E1F23;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos */
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #325aa8;
+    outline: none;
+}
+
+.create-button {
+    padding: 10px 15px;
+    background: #325aa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.create-button:hover {
+    background: #1E1F23;
+    transform: scale(1.05);
+}

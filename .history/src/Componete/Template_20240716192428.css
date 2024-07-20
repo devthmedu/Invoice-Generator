@@ -1,0 +1,305 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #48ede5;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #48ede5;
+    color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    font-size: 1.1em;
+}
+
+.table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    background: #48ede5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+    background: #36c5d7;
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-title .hed {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #48ede5;
+}
+
+.icon-cross {
+    cursor: pointer;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.forms input:focus {
+    border-color: #48ede5;
+    outline: none;
+}
+
+.notes {
+    margin-top: 20px;
+    color: #333;
+}
+
+.notes strong {
+    display: block;
+    margin-bottom: 5px;
+}
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions button {
+    background-color: #48ede5; /* Cor do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.actions button:hover {
+    background-color: #1E1F23; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+/* Template.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; /* Fundo branco */
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px; /* Ajuste a largura conforme necessário */
+}
+
+h1 {
+  text-align: center;
+  color: #48ede5; /* Cor primária */
+  margin-bottom: 20px;
+}
+
+.client-info {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Fundo leve */
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Borda leve */
+}
+
+.client-info p {
+  margin: 5px 0; /* Espaçamento entre parágrafos */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead {
+  background: #48ede5; /* Cor primária */
+  color: #ffffff;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+  background: #f1f1f1; /* Efeito hover nas linhas */
+}
+
+.notes {
+  margin-top: 20px;
+  font-style: italic; /* Itálico para observações */
+}
+
+.print-button, .add-button {
+  padding: 10px 15px;
+  background: #48ede5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.print-button:hover, .add-button:hover {
+  background: #36b4d3; /* Efeito hover */
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-title .hed {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.notes {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.print-button, .add-button, .remove-button {
+  background-color: #48ede5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.print-button:hover, .add-button:hover, .remove-button:hover {
+  background-color: #36b4d3;
+  transform: scale(1.05);
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forms input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+}
+
+.forms input::placeholder {
+  color: #aaa;
+}
+
+.icon-cross {
+  cursor: pointer;
+}

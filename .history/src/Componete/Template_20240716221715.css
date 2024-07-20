@@ -1,0 +1,142 @@
+/* Template.css */
+
+.pdf-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2980b9;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 5px;
+  margin: 20px 0 10px;
+}
+
+h3 {
+  color: #e74c3c;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+.product-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.product-list span {
+  flex-grow: 1;
+}
+
+.product-list button {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.product-list button:hover {
+  color: #c0392b;
+}
+
+.add-product-button,
+.print-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #48ede5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 5px;
+}
+
+.add-product-button:hover,
+.print-button:hover {
+  background-color: #39b2c4;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-title .close-button {
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.dialog-title .close-button:hover {
+  opacity: 0.8;
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.success-message {
+  color: #28a745;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .add-product-button,
+  .print-button {
+    width: 100%; /* Full width for buttons on small screens */
+  }
+}

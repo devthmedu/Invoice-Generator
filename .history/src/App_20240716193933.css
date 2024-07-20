@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+  background-color: #f4f9fc; /* Fundo suave */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px; /* Largura ideal para usabilidade */
+  margin: 100px auto; /* Centralização */
+  padding: 40px 30px; /* Padding generoso */
+  background: white; /* Estilo de cartão */
+  border-radius: 20px; /* Cantos arredondados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s; /* Transição suave */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px; /* Centraliza o logo */
+  max-width: 160px; /* Ajusta o tamanho do logo */
+}
+
+.title {
+  text-align: center;
+  color: #333; /* Texto escuro */
+  font-size: 28px; /* Tamanho de fonte grande */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-weight: 700; /* Título em negrito */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Layout em coluna para os inputs */
+}
+
+.inputs {
+  margin-bottom: 30px; /* Mais espaço abaixo dos inputs */
+}
+
+.input-field {
+  padding: 12px; /* Padding confortável */
+  border: 2px solid #ddd; /* Borda mais espessa */
+  border-radius: 10px; /* Cantos arredondados */
+  font-size: 18px; /* Tamanho de fonte maior */
+  width: 100%; /* Largura total */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna suave */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+  margin-bottom: 20px; /* Espaço entre os inputs */
+}
+
+.input-field:focus {
+  border-color: #48ede5; /* Cor de destaque ao focar */
+  outline: none; /* Remove o contorno padrão */
+  box-shadow: 0 0 8px rgba(72, 237, 229, 0.5); /* Efeito de brilho mais forte */
+}
+
+.input-field::placeholder {
+  color: #bbb; /* Placeholder cinza claro */
+  font-style: italic; /* Estilo itálico para o placeholder */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.submit-button {
+  background-color: #48ede5; /* Cor primária */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 14px 28px; /* Padding confortável */
+  font-size: 18px; /* Tamanho de fonte maior */
+  cursor: pointer; /* Muda para ponteiro ao passar o mouse */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+  display: flex; /* Flex para alinhar ícone */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.submit-button:hover {
+  background-color: #36b4d3; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de zoom leve */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.submit-button:disabled {
+  background-color: #c0c0c0; /* Cinza quando desabilitado */
+  cursor: not-allowed; /* Cursor de não permitido */
+}
+
+.submit-button svg {
+  margin-left: 8px; /* Espaço entre texto e ícone */
+}
+
+input:disabled {
+  background-color: #f7f7f7; /* Fundo claro para desabilitados */
+  color: #aaa; /* Texto mais claro */
+}
