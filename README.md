@@ -1,4 +1,4 @@
-#  Generator de Fatura
+# Invoice Generator
 
 ![Post minimalista marketing digital roxo branco e azul](https://github.com/user-attachments/assets/fabc1447-90fe-4fc5-8956-c60dc9c83906)
 
