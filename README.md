@@ -2,69 +2,69 @@
 
 ![Post minimalista marketing digital roxo branco e azul](https://github.com/user-attachments/assets/fabc1447-90fe-4fc5-8956-c60dc9c83906)
 
-## 📜 Descrição do Projeto
+## 📜 Project Description
 
-O **Faturas Gerdor** é um aplicativo web desenvolvido em React que permite a criação eficiente de faturas em formato digital. Com uma interface amigável, os usuários podem inserir informações essenciais e gerar faturas em PDF automaticamente, proporcionando um visual profissional.
+**Faturas Gerdor** is a web application developed in React that allows the efficient creation of invoices in digital format. With a user-friendly interface, users can enter essential information and automatically generate PDF invoices, providing a professional look.
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- **Entrada Dinâmica:** Insira facilmente o número da fatura.
-- **Geração Automática de Data:** A data atual é registrada automaticamente.
-- **Geração de PDF:** Converte os dados inseridos em um documento PDF bem estruturado.
-- **Interface Amigável:** A aplicação possui um layout intuitivo, acessível a todos.
-- **Opções de Personalização:** Futuras versões poderão incluir logotipos e layouts personalizáveis.
+- **Dynamic Input:** Easily enter invoice number.
+- **Automatic Date Generation:** The current date is recorded automatically.
+- **PDF Generation:** Converts the entered data into a well-structured PDF document.
+- **Friendly Interface:** The application has an intuitive layout, accessible to everyone.
+- **Customization Options:** Future versions may include customizable logos and layouts.
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Technologies Used
 
 - React
 - JavaScript
-- CSS
+-CSS
 - Vercel
 
-## 📂 Estrutura do Projeto
+## 📂 Project Structure
 
-- **App.jsx:** Componente principal que gerencia o estado da fatura e visualização.
-- **TemplatePdf.jsx:** Componente responsável pela geração do PDF da fatura.
-- **index.jsx:** Ponto de entrada do aplicativo.
-- **App.css:** Estilos globais da aplicação.
+- **App.jsx:** Main component that manages invoice status and visualization.
+- **TemplatePdf.jsx:** Component responsible for generating the invoice PDF.
+- **index.jsx:** Application entry point.
+- **App.css:** Global application styles.
 
-## 📥 Instalação
+## 📥 Installation
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu_usuario/invoice-generator.git
-   cd invoice-generator
-   ```
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/seu_usuario/invoice-generator.git
+ cd invoice-generator
+ ```
 
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
+2. Install dependencies:
+ ```bash
+ npm install
+ ```
 
-3. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm start
-   ```
+3. Start the development server:
+ ```bash
+ npm start
+ ```
 
-## 🚀 Como Usar
+## 🚀 How to Use
 
-1. Abra o aplicativo no seu navegador.
-2. Insira o número da fatura no campo de entrada.
-3. Clique no botão "Criar ➡️" para gerar a fatura.
-4. Adicione produtos e suas quantidades.
-5. Clique em "Imprimir" para gerar o PDF da fatura.
+1. Open the app in your browser.
+2. Enter the invoice number in the input field.
+3. Click the "Create ➡️" button to generate the invoice.
+4. Add products and their quantities.
+5. Click "Print" to generate the invoice PDF.
 
-## 🤝 Contribuição
+## 🤝 Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um pull request ou abrir uma issue.
+Contributions are welcome! Feel free to submit a pull request or open an issue.
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
 ---
 
 <p align="center">
-  Este projeto pertence a @Thomas Eduardo. Para mais informações, visite <a href="http://www.thomasnascimento.online">meu site</a>.
+ This project belongs to @Thomas Eduardo. For more information, visit <a href="http://www.thomasnascimento.online">my website</a>.
 </p>
 ```
