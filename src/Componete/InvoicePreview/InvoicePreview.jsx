@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TemplatePdf from '../Template/Template';
 import ActionButton from '../ActionButton/ActionButton';
-import './InvoicePreview'; // Certifique-se de que o caminho está correto
+import './InvoicePreview.css'; // Certifique-se de que o caminho está correto
 
 const PaymentOptions = () => (
   <section className="payment-options" aria-labelledby="payment-options-heading">

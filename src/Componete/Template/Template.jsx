@@ -4,7 +4,7 @@ import { Dialog, DialogTitle, DialogContent, IconButton, Button } from '@mui/mat
 import { X, Trash2, Edit2, Save, Eye } from 'lucide-react'; // Importando ícones
 import QRCode from 'qrcode.react';
 import ProductForm from '../ProductForm/ProductForm'; // Importando o componente ProductForm
-import './Template';
+import './Template.css';
 
 const Template = ({
   nomeCliente,
