@@ -1,6 +1,8 @@
 
 # Projeto de Gestão de Faturas
 
+![Gerador de Fatura](https://github.com/user-attachments/assets/b042cd0a-10aa-4df6-9fc9-855253205ac8)
+
 ## Visão Geral
 
 O projeto de gestão de faturas é uma aplicação web destinada a gerar e gerenciar faturas de forma eficiente. Ele permite visualizar uma prévia da fatura, adicionar e editar produtos, e imprimir ou gerar um PDF da fatura. A interface foi desenvolvida com React e utiliza bibliotecas modernas para garantir uma experiência de usuário fluida e responsiva.
