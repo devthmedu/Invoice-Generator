@@ -9,13 +9,13 @@ const PaymentOptions = () => (
     <h4 id="payment-options-heading">Formas de Pagamento</h4>
     <div className="payment-methods">
       <div className="payment-method" role="listitem">
-        <img src="/Pix.svg" alt="Pix - Pagamento via QR Code" className="payment-icon" />
+        <img src="/public/Pix.svg" alt="Pix - Pagamento via QR Code" className="payment-icon" />
       </div>
       <div className="payment-method" role="listitem">
-        <img src="/boleto.svg" alt="Boleto Bancário - Pagamento via boleto" className="payment-icon" />
+        <img src="/public/boleto.svg" alt="Boleto Bancário - Pagamento via boleto" className="payment-icon" />
       </div>
       <div className="payment-method" role="listitem">
-        <img src="/credit-card.svg" alt="Cartão de Crédito - Pagamento com cartão" className="payment-icon" />
+        <img src="/public/credit-card.svg" alt="Cartão de Crédito - Pagamento com cartão" className="payment-icon" />
       </div>
     </div>
   </section>
@@ -24,7 +24,7 @@ const PaymentOptions = () => (
 const InvoicePreview = ({ numeroDaFatura, data, nomeCliente, produtos, total, voltar }) => (
   <main className="invoice-preview">
     <header className="invoice-header">
-      <img src="/favicon.svg" alt="Logo da Empresa" className="pdf-logo" />
+      <img src="/public/favicon.svg" alt="Logo da Empresa" className="pdf-logo" />
       <h1>Pré-visualização da Fatura</h1>
     </header>
     <section className="invoice-content">
