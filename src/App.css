@@ -1,168 +1,103 @@
-/* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* App.css */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif; /* Fonte padrão */
+  background-color: #121212; /* Fundo preto */
+  color: #e0e0e0; /* Texto claro */
+}
+/* Estilização da barra de rolagem para WebKit (Chrome, Safari) */
+
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem vertical */
+  height: 12px; /* Altura da barra de rolagem horizontal */
 }
 
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Cor de fundo da trilha da barra de rolagem */
+  border-radius: 12px; /* Bordas arredondadas da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e6b80096; /* Cor do "polegar" da barra de rolagem */
+  border-radius: 12px; /* Bordas arredondadas do "polegar" */
+  transition: background-color 0.3s; /* Transição suave para a cor */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6b800; /* Cor do "polegar" ao passar o mouse */
+}
+
+/* Estilização da barra de rolagem horizontal */
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #e6b800; /* Cor do "polegar" da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #e6b800; /* Cor do "polegar" horizontal ao passar o mouse */
+}
+
+/* Container geral */
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 30px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Largura máxima para grandes telas */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #1e1e1e; /* Fundo escuro para contraste */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
 }
 
+/* Imagem do logo */
 .logo {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 100%;
-  height: auto;
+  display: block; /* Garante que a imagem se comporte como bloco */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 20px auto; /* Espaçamento superior e inferior, e centraliza horizontalmente */
 }
 
+/* Título principal */
 .title {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2em; /* Increased font size for prominence */
+  font-size: 2.5rem; /* Tamanho da fonte para títulos grandes */
+  color: #e6b800; /* Cor do título */
+  margin: 20px 0; /* Espaço acima e abaixo do título */
+  text-align: center; /* Centraliza o título */
 }
 
-/* Form Styles */
-.form {
+/* Botões */
+.buttons {
   display: flex;
-  flex-direction: column;
-  gap: 20px; /* Increased gap for better spacing */
+  flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+  justify-content: center; /* Centraliza os botões */
+  gap: 10px; /* Espaço entre os botões */
+  margin: 30px 0; /* Espaço acima e abaixo dos botões */
 }
 
-.inputs {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* Allow wrapping */
-}
 
-.input-field {
-  flex: 1;
-  padding: 12px; /* Increased padding */
-  border: 1px solid #ccc;
-  border-radius: 6px; /* Slightly more rounded corners */
-  font-size: 16px;
-  min-width: 220px; /* Minimum width for inputs */
-  box-sizing: border-box; /* Include padding and border in width */
-}
-
-.input-field:focus {
-  border-color: #48ede5; /* Highlight on focus */
-  outline: none;
-  box-shadow: 0 0 5px rgba(72, 237, 229, 0.5); /* Subtle glow */
-}
-
-.submit-button {
-  padding: 12px 20px; /* Increased padding */
-  background-color: #48ede5;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.submit-button:hover {
-  background-color: #36b8c2;
-  transform: translateY(-2px); /* Lift effect */
-}
-
-.product-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Increased gap */
-}
-
-.product-form input {
-  padding: 12px; /* Increased padding for product inputs */
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%; /* Full width for product inputs */
-  box-sizing: border-box; /* Include padding and border in width */
-}
-
-/* Product List Styles */
-.product-list {
-  margin-top: 20px;
-  padding: 15px;
-  background: #f9f9f9;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product-list ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.product-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  font-size: 16px; /* Consistent font size */
-}
-
-.product-list li:last-child {
-  border-bottom: none;
-}
-
-/* Barcode and PDF Container Styles */
-.barcode-container {
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Button Styles */
-.back-button {
-  margin-top: 20px;
-  padding: 12px 20px; /* Increased padding */
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.back-button:hover {
-  background-color: #e55b5b;
-  transform: translateY(-2px); /* Lift effect */
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .inputs {
-    flex-direction: column;
-  }
-
-  .input-field {
-    margin-bottom: 10px;
-    width: 100%; /* Full width on small screens */
-  }
-
-  .product-list, .container {
-    padding: 20px; /* Less padding for smaller screens */
-  }
-
-  .submit-button, .back-button {
-    width: 100%; /* Full width for buttons */
-  }
-}
-
-@media (max-width: 400px) {
-  .submit-button, .back-button {
-    padding: 10px; /* Smaller padding on extra small screens */
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reduz o padding em telas menores */
   }
 
   .title {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
+    font-size: 2rem; /* Reduz o tamanho da fonte em telas menores */
+    margin: 15px 0; /* Ajusta o espaço acima e abaixo do título */
+  }
+
+  .buttons {
+    gap: 8px; /* Espaço menor entre os botões */
+    margin: 20px 0; /* Ajusta o espaço acima e abaixo dos botões */
+  }
+
+  .logo {
+    width: 150px; /* Reduz o tamanho do logo em telas menores */
+    margin: 15px auto; /* Ajusta o espaço acima e abaixo do logo */
   }
 }

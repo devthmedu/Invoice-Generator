@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import TemplatePdf from './Componete/Template';
-import Barcode from 'react-barcode';
-import { FaArrowRight, FaArrowLeft, FaEdit, FaTrash } from 'react-icons/fa';
+import InvoiceForm from './Componete/InvoiceForm/InvoiceForm';
+import ProductForm from './Componete/ProductForm/ProductForm';
+import ProductList from './Componete/ProductList/ProductList';
+import BarcodeDisplay from './Componete/BarcodeDisplay/BarcodeDisplay';
+import InvoicePreview from './Componete/InvoicePreview/InvoicePreview';
+import ActionButton from './Componete/ActionButton/ActionButton';
 import { toast, ToastContainer } from 'react-toastify';
-import logo from '/logo.png';
+import 'react-toastify/dist/ReactToastify.css';
+import logo from '/favicon.svg';
+import { FaArrowRight } from 'react-icons/fa';
 
 function App() {
   const [numeroDaFatura, setNumeroDaFatura] = useState('');
@@ -144,107 +149,52 @@ function App() {
         <div className="container">
           <img src={logo} alt="Logo" className="logo" />
           <h1 className="title">Gerador de Fatura</h1>
-          <div className="form">
-            <div className="inputs">
-              <input
-                type="text"
-                placeholder="Nome do Cliente"
-                value={nomeCliente}
-                onChange={(e) => setNomeCliente(e.target.value)}
-                disabled={loading}
-                className="input-field"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Número da Fatura"
-                value={numeroDaFatura}
-                onChange={(e) => setNumeroDaFatura(e.target.value)}
-                disabled={loading}
-                className="input-field"
-                required
-              />
-            </div>
-            <div className="product-form">
-              <input
-                type="text"
-                placeholder="Produto"
-                value={produto}
-                onChange={(e) => setProduto(e.target.value)}
-                className="input-field"
-              />
-              <input
-                type="number"
-                placeholder="Quantidade"
-                value={quantidade}
-                onChange={(e) => setQuantidade(e.target.value)}
-                className="input-field"
-                min="1"
-              />
-              <input
-                type="number"
-                placeholder="Preço"
-                value={preco}
-                onChange={(e) => setPreco(e.target.value)}
-                className="input-field"
-                min="0"
-              />
-              <button onClick={adicionarProduto} className="submit-button">
-                {editIndex !== null ? 'Atualizar Produto' : 'Adicionar Produto'}
-              </button>
-            </div>
-            <div className="buttons">
-              <button
-                onClick={criarFatura}
-                disabled={loading}
-                className="submit-button"
-                title={
-                  loading
-                    ? 'Aguarde enquanto a fatura é criada'
-                    : 'Criar fatura'
-                }
-              >
-                {loading ? 'Criando...' : 'Criar Fatura'} <FaArrowRight />
-              </button>
-            </div>
-          </div>
-          <div className="barcode-container">
-            <h2>Código de Barras:</h2>
-            {numeroDaFatura && <Barcode value={numeroDaFatura} />}
-          </div>
-          <div className="product-list">
-            <h3>Produtos Adicionados:</h3>
-            <ul>
-              {produtos.map((item, index) => (
-                <li key={index}>
-                  {item.quantidade} x {item.produto} @ R${' '}
-                  {item.preco.toFixed(2)} = R${' '}
-                  {(item.quantidade * item.preco).toFixed(2)}
-                  <button onClick={() => editarProduto(index)}>
-                    <FaEdit />
-                  </button>
-                  <button onClick={() => removerProduto(index)}>
-                    <FaTrash />
-                  </button>
-                </li>
-              ))}
-            </ul>
-            <h3>Total: R$ {totalFatura.toFixed(2)}</h3>
+          <InvoiceForm
+            numeroDaFatura={numeroDaFatura}
+            nomeCliente={nomeCliente}
+            setNumeroDaFatura={setNumeroDaFatura}
+            setNomeCliente={setNomeCliente}
+            loading={loading}
+          />
+          <ProductForm
+            produto={produto}
+            quantidade={quantidade}
+            preco={preco}
+            setProduto={setProduto}
+            setQuantidade={setQuantidade}
+            setPreco={setPreco}
+            adicionarProduto={adicionarProduto}
+            editIndex={editIndex}
+          />
+          <ProductList
+            produtos={produtos}
+            editarProduto={editarProduto}
+            removerProduto={removerProduto}
+          />
+          <BarcodeDisplay numeroDaFatura={numeroDaFatura} />
+          <div className="buttons">
+            <ActionButton
+              onClick={criarFatura}
+              disabled={loading}
+              title={
+                loading
+                  ? 'Aguarde enquanto a fatura é criada'
+                  : 'Criar fatura'
+              }
+            >
+              {loading ? 'Criando...' : 'Criar Fatura'} <FaArrowRight />
+            </ActionButton>
           </div>
         </div>
       ) : (
-        <div className="pdf-container">
-          <TemplatePdf
-            NumeroDaFatura={numeroDaFatura}
-            data={data}
-            nomeCliente={nomeCliente}
-            produtos={produtos}
-            total={totalFatura}
-          />
-          <button onClick={voltar} className="back-button">
-            Voltar <FaArrowLeft />
-          </button>
-        </div>
+        <InvoicePreview
+          NumeroDaFatura={numeroDaFatura}
+          data={data}
+          nomeCliente={nomeCliente}
+          produtos={produtos}
+          total={totalFatura}
+          voltar={voltar}
+        />
       )}
     </>
   );

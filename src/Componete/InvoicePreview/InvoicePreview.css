@@ -1,0 +1,131 @@
+.invoice-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 40px auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.invoice-header {
+  margin-bottom: 20px;
+}
+
+.invoice-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.invoice-info h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.invoice-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.invoice-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.invoice-summary {
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+
+.invoice-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.invoice-summary p {
+  font-size: 1.25rem;
+}
+
+.payment-options {
+  margin-top: 20px;
+}
+
+.payment-options h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.payment-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: #1e88e5;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  background-color: #0d47a1;
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .invoice-summary {
+    font-size: 1rem;
+  }
+
+  .invoice-summary h3 {
+    font-size: 1.25rem;
+  }
+
+  .invoice-summary p {
+    font-size: 1rem;
+  }
+
+  .payment-method {
+    flex-direction: column;
+  }
+
+  .payment-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .back-button {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+}
