@@ -1,131 +1,141 @@
+/* InvoicePreview.css */
+
 .invoice-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 900px;
+  margin: 20px auto; /* Espaçamento top e bottom */
   padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 800px;
-  margin: 40px auto;
-  color: #ffffff;
-  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Título da fatura */
 .invoice-header {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .invoice-header h1 {
   font-size: 2rem;
+  color: #e6b800;
+  margin: 0;
+}
+
+.invoice-header .pdf-logo {
+  max-width: 120px;
   margin-bottom: 10px;
 }
 
-.invoice-info h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
+/* Informações da fatura */
 .invoice-info p {
   font-size: 1rem;
-  margin: 5px 0;
+  color: #555;
+  margin: 10px 0; /* Aumenta o espaçamento entre as linhas */
 }
 
+/* Conteúdo da fatura */
 .invoice-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
 }
 
-.invoice-summary {
-  margin-top: 20px;
-  font-size: 1.25rem;
-}
-
-.invoice-summary h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.invoice-summary p {
-  font-size: 1.25rem;
-}
-
+/* Opções de pagamento */
 .payment-options {
-  margin-top: 20px;
+  margin: 20px 0; /* Espaçamento top e bottom */
+  text-align: center;
 }
 
 .payment-options h4 {
   font-size: 1.25rem;
-  margin-bottom: 10px;
+  color: #d3cece;
+  margin-bottom: 15px; /* Espaçamento bottom */
 }
 
+/* Métodos de pagamento */
 .payment-methods {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Adapta o layout para telas menores */
 }
 
 .payment-method {
   display: flex;
   align-items: center;
-  margin: 10px;
 }
 
 .payment-icon {
   width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  height: auto;
 }
 
+/* Botão de voltar */
 .back-button {
   margin-top: 20px;
-  background-color: #1e88e5;
-  border: none;
-  border-radius: 8px;
-  color: #ffffff;
-  font-size: 1rem;
   padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e6b800;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  text-align: center;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .back-button:hover {
-  background-color: #1565c0;
+  background-color: #c49e00;
   transform: scale(1.05);
 }
 
 .back-button:active {
-  background-color: #0d47a1;
-  transform: scale(0.98);
+  background-color: #a87d00;
+  transform: scale(0.95);
 }
 
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
-  .invoice-summary {
-    font-size: 1rem;
+  .invoice-preview {
+    padding: 15px;
   }
 
-  .invoice-summary h3 {
-    font-size: 1.25rem;
+  .invoice-header h1 {
+    font-size: 1.75rem;
   }
 
-  .invoice-summary p {
-    font-size: 1rem;
+  .invoice-info p {
+    font-size: 0.9rem;
   }
 
-  .payment-method {
-    flex-direction: column;
-  }
-
-  .payment-icon {
-    width: 30px;
-    height: 30px;
+  .payment-options h4 {
+    font-size: 1.125rem;
   }
 
   .back-button {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .invoice-preview {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .invoice-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .invoice-info p {
+    font-size: 0.85rem;
+    margin: 8px 0;
+  }
+
+  .payment-options h4 {
+    font-size: 1rem;
+  }
+
+  .back-button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }

@@ -2,56 +2,46 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TemplatePdf from '../Template/Template';
 import ActionButton from '../ActionButton/ActionButton';
-import './InvoicePreview.css';
+import './InvoicePreview'; // Certifique-se de que o caminho está correto
 
 const PaymentOptions = () => (
-  <div className="payment-options">
-    <h4>Formas de Pagamento</h4>
+  <section className="payment-options" aria-labelledby="payment-options-heading">
+    <h4 id="payment-options-heading">Formas de Pagamento</h4>
     <div className="payment-methods">
-      <div className="payment-method">
-        <img src="path/to/pix-icon.png" alt="Pix" className="payment-icon" />
-        <p>Pix</p>
+      <div className="payment-method" role="listitem">
+        <img src="/public/Pix.svg" alt="Pix - Pagamento via QR Code" className="payment-icon" />
       </div>
-      <div className="payment-method">
-        <img src="path/to/boleto-icon.png" alt="Boleto" className="payment-icon" />
-        <p>Boleto</p>
+      <div className="payment-method" role="listitem">
+        <img src="/public/boleto.svg" alt="Boleto Bancário - Pagamento via boleto" className="payment-icon" />
       </div>
-      <div className="payment-method">
-        <img src="path/to/cartao-icon.png" alt="Cartão de Crédito" className="payment-icon" />
-        <p>Cartão de Crédito</p>
+      <div className="payment-method" role="listitem">
+        <img src="/public/credit-card.svg" alt="Cartão de Crédito - Pagamento com cartão" className="payment-icon" />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 const InvoicePreview = ({ numeroDaFatura, data, nomeCliente, produtos, total, voltar }) => (
-  <div className="invoice-preview">
+  <main className="invoice-preview">
     <header className="invoice-header">
+      <img src="/public/favicon.svg" alt="Logo da Empresa" className="pdf-logo" />
       <h1>Pré-visualização da Fatura</h1>
-      <div className="invoice-info">
-        <h2>Fatura: {numeroDaFatura}</h2>
-        <p>Data: {data}</p>
-        <p>Cliente: {nomeCliente}</p>
-      </div>
+     
     </header>
-    <div className="invoice-content">
+    <section className="invoice-content">
       <TemplatePdf
         numeroDaFatura={numeroDaFatura}
         data={data}
         nomeCliente={nomeCliente}
         produtos={produtos}
-        total={total}
+        total={total} // Certifique-se de que o TemplatePdf está preparado para receber esta prop
       />
-      <div className="invoice-summary">
-        <h3>Total:</h3>
-        <p>R$ {total.toFixed(2)}</p>
-      </div>
-    </div>
+    </section>
     <PaymentOptions />
     <ActionButton onClick={voltar} className="back-button">
       Voltar
     </ActionButton>
-  </div>
+  </main>
 );
 
 InvoicePreview.propTypes = {

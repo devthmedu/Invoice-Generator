@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Barcode from 'react-barcode';
 import './InvoiceForm.css';
 
 const InvoiceForm = ({ numeroDaFatura, nomeCliente, cpfCliente, setNumeroDaFatura, setNomeCliente, setCpfCliente, loading }) => {

@@ -188,7 +188,7 @@ function App() {
         </div>
       ) : (
         <InvoicePreview
-          NumeroDaFatura={numeroDaFatura}
+          numeroDaFatura={numeroDaFatura}
           data={data}
           nomeCliente={nomeCliente}
           produtos={produtos}

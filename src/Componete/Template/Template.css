@@ -1,131 +1,141 @@
 /* Template.css */
 
+/* Container principal */
 .pdf-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  background-color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  background-color: #ffffffd8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.pdf-logo {
-  max-width: 150px;
-  margin: 0 auto 20px;
-  display: block; /* Center logo */
-}
-
-h1 {
+/* Cabeçalho */
+.pdf-header {
+  margin-bottom: 20px;
   text-align: center;
-  color: #2c3e50;
-  font-size: 2em;
-  margin-bottom: 10px;
 }
 
-h2, h3 {
-  color: #34495e;
-  margin: 15px 0 10px;
+h3{
+  color: red;
 }
 
-p {
-  font-size: 1em;
+.pdf-header h1 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+/* Informações da fatura */
+.pdf-info p {
+  font-size: 1rem;
   color: #555;
+  margin: 5px 0;
 }
 
-strong {
-  font-weight: bold;
+/* Produtos */
+.pdf-products {
+  margin-bottom: 20px;
 }
 
+.pdf-products h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Lista de produtos */
 .product-list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.product-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.product-list li:last-child {
-  border-bottom: none; /* Remove border for the last item */
-}
-
-.product-list span {
-  flex-grow: 1; /* Allow span to grow */
-}
-
-.product-list div {
-  display: flex;
-  gap: 10px; /* Space between buttons */
-}
-
-.add-product-button, .print-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #48ede5;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: 10px 0;
-}
-
-.add-product-button:hover, .print-button:hover {
-  background-color: #39b2c4;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #3498db; /* Button color */
-}
-
-button:hover {
-  color: #2980b9; /* Darker shade on hover */
-}
-
-.dialog-title {
+.product-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-input[type="text"],
-input[type="number"] {
-  width: 100%;
+  margin-bottom: 10px;
   padding: 10px;
-  margin: 10px 0;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
-  border-color: #3498db; /* Focus color */
-  outline: none; /* Remove default outline */
+/* Botões de ação */
+.action-buttons {
+  display: flex;
+  gap: 10px;
 }
 
-@media (max-width: 600px) {
-  .pdf-container {
-    padding: 15px;
+/* Botões */
+.add-product-button,
+.print-button {
+  margin: 20px 0; /* Espaçamento vertical */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-product-button {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+.add-product-button:hover {
+  background-color: #d4a000;
+}
+
+.print-button {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.print-button:hover {
+  background-color: #003d7a;
+}
+
+/* QR Code */
+.pdf-qr {
+  text-align: center;
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.pdf-qr h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pdf-header h1 {
+    font-size: 1.5rem;
   }
 
-  h1 {
-    font-size: 1.5em; /* Responsive title size */
+  .pdf-info p {
+    font-size: 0.875rem;
   }
 
-  .add-product-button, .print-button {
-    width: 100%; /* Full width on mobile */
+  .pdf-products h2 {
+    font-size: 1.25rem;
   }
 
-  .product-list li {
-    flex-direction: column; /* Stack items on mobile */
-    align-items: flex-start; /* Align left */
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .add-product-button,
+  .print-button {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+
+  .pdf-qr h2 {
+    font-size: 1.25rem;
   }
 }

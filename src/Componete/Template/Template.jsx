@@ -1,25 +1,21 @@
 import React, { useRef, useState, useEffect } from 'react';
 import ReactPrint from 'react-to-print';
-import { Dialog, DialogTitle, DialogContent, IconButton } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, IconButton, Button } from '@mui/material';
 import { X, Trash2, Edit2, Save, Eye } from 'lucide-react'; // Importando ícones
 import QRCode from 'qrcode.react';
 import ProductForm from '../ProductForm/ProductForm'; // Importando o componente ProductForm
-import './Template.css';
+import './Template';
 
-function Template({
+const Template = ({
   nomeCliente,
-  NumeroDaFatura,
+  numeroDaFatura,
   data,
   produtos,
   total,
   vencimento,
-  banco,
   formaPagamento,
-  endereco,
-  cidade,
   cpf,
-  email,
-}) {
+}) => {
   const ref = useRef();
   const [abrirPopupProduto, setAbrirPopup] = useState(false);
   const [produto, setProduto] = useState('');
@@ -79,18 +75,14 @@ function Template({
   return (
     <div ref={ref} className="pdf-container">
       <header className="pdf-header">
-        <img src="/favicon.icon" alt="Logo" className="pdf-logo" />
-        <h1>Fatura</h1>
+        <h1>Informações da Fatura</h1>
         <div className="pdf-info">
           <p><strong>Cliente:</strong> {nomeCliente}</p>
-          <p><strong>Número da Fatura:</strong> {NumeroDaFatura}</p>
+          <p><strong>Número da Fatura:</strong> {numeroDaFatura}</p>
           <p><strong>Data:</strong> {data}</p>
           <p><strong>Vencimento:</strong> {vencimento}</p>
-          <p><strong>Banco:</strong> {banco}</p>
           <p><strong>Forma de Pagamento:</strong> {formaPagamento}</p>
-          <p><strong>Endereço:</strong> {endereco}, {cidade}</p>
           <p><strong>CPF:</strong> {cpf}</p>
-          <p><strong>Email:</strong> {email}</p>
         </div>
       </header>
 
@@ -98,16 +90,18 @@ function Template({
         <h2>Produtos</h2>
         <ul className="product-list">
           {lista.map((p, index) => (
-            <li key={index}>
-              <span>{p.quantidade} x {p.item} @ R${p.preco.toFixed(2)} = R$ {(p.quantidade * p.preco).toFixed(2)}</span>
+            <li key={index} className="product-item">
+              <span>
+                {p.quantidade} x {p.item} @ R${p.preco.toFixed(2)} = R$ {(p.quantidade * p.preco).toFixed(2)}
+              </span>
               <div className="action-buttons">
-                <IconButton onClick={() => editarProduto(index)} color="primary" size="small">
+                <IconButton onClick={() => editarProduto(index)} color="primary" size="small" aria-label="Editar produto">
                   <Edit2 size={16} />
                 </IconButton>
-                <IconButton onClick={() => removerProduto(index)} color="secondary" size="small">
+                <IconButton onClick={() => removerProduto(index)} color="secondary" size="small" aria-label="Remover produto">
                   <Trash2 size={16} />
                 </IconButton>
-                <IconButton onClick={() => alert(`Visualizando detalhes de ${p.item}`)} size="small">
+                <IconButton onClick={() => alert(`Visualizando detalhes de ${p.item}`)} size="small" aria-label="Visualizar detalhes">
                   <Eye size={16} />
                 </IconButton>
               </div>
@@ -119,7 +113,7 @@ function Template({
 
       <section className="pdf-qr">
         <h2>QR Code</h2>
-        <QRCode value={`Fatura: ${NumeroDaFatura}`} />
+        <QRCode value={`Fatura: ${numeroDaFatura}`} />
       </section>
 
       <Button
@@ -128,6 +122,7 @@ function Template({
         color="primary"
         className="add-product-button"
         startIcon={<Save />}
+        aria-label="Adicionar produto"
       >
         Adicionar Produto
       </Button>
@@ -140,7 +135,7 @@ function Template({
       <Dialog open={abrirPopupProduto} onClose={() => setAbrirPopup(false)}>
         <DialogTitle>
           Adicionar Produto
-          <IconButton onClick={() => setAbrirPopup(false)} size="small" color="error">
+          <IconButton onClick={() => setAbrirPopup(false)} size="small" color="error" aria-label="Fechar">
             <X size={16} />
           </IconButton>
         </DialogTitle>
@@ -159,6 +154,6 @@ function Template({
       </Dialog>
     </div>
   );
-}
+};
 
 export default Template;
