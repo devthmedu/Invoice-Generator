@@ -1,70 +1,87 @@
-# Invoice Generator
 
-![Post minimalista marketing digital roxo branco e azul](https://github.com/user-attachments/assets/fabc1447-90fe-4fc5-8956-c60dc9c83906)
+# Projeto de Gestão de Faturas
 
-## 📜 Project Description
+## Visão Geral
 
-**Faturas Gerdor** is a web application developed in React that allows the efficient creation of invoices in digital format. With a user-friendly interface, users can enter essential information and automatically generate PDF invoices, providing a professional look.
+O projeto de gestão de faturas é uma aplicação web destinada a gerar e gerenciar faturas de forma eficiente. Ele permite visualizar uma prévia da fatura, adicionar e editar produtos, e imprimir ou gerar um PDF da fatura. A interface foi desenvolvida com React e utiliza bibliotecas modernas para garantir uma experiência de usuário fluida e responsiva.
 
-## ✨ Features
+## Funcionalidades
 
-- **Dynamic Input:** Easily enter invoice number.
-- **Automatic Date Generation:** The current date is recorded automatically.
-- **PDF Generation:** Converts the entered data into a well-structured PDF document.
-- **Friendly Interface:** The application has an intuitive layout, accessible to everyone.
-- **Customization Options:** Future versions may include customizable logos and layouts.
+- **Visualização de Fatura:** Exibe uma prévia da fatura com informações detalhadas.
+- **Gerenciamento de Produtos:** Adiciona, edita e remove produtos da fatura.
+- **Cálculo Automático do Total:** Calcula automaticamente o total da fatura com base na quantidade e preço dos produtos.
+- **QR Code:** Gera um QR Code para a fatura que pode ser utilizado para referência rápida.
+- **Impressão e PDF:** Permite imprimir a fatura ou gerar um PDF utilizando a funcionalidade do React-to-Print.
+- **Interface Responsiva:** Adapta-se a diferentes tamanhos de tela para uma melhor experiência em dispositivos móveis e desktops.
 
-## 🛠 Technologies Used
+## Estrutura do Projeto
 
-- React
-- JavaScript
--CSS
-- Vercel
+- `src/`
+  - `components/`
+    - `InvoicePreview/` - Componente para a visualização da fatura.
+    - `ProductForm/` - Componente para o formulário de adição/edição de produtos.
+    - `ActionButton/` - Componente para botões de ação reutilizáveis.
+    - `Template/` - Componente para o layout da fatura e geração do PDF.
+  - `App.js` - Arquivo principal do React que configura e renderiza os componentes.
+  - `index.js` - Ponto de entrada da aplicação React.
 
-## 📂 Project Structure
+## Tecnologias Utilizadas
 
-- **App.jsx:** Main component that manages invoice status and visualization.
-- **TemplatePdf.jsx:** Component responsible for generating the invoice PDF.
-- **index.jsx:** Application entry point.
-- **App.css:** Global application styles.
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **Material-UI**: Biblioteca de componentes React que segue as diretrizes de design do Material Design.
+- **React-to-Print**: Biblioteca para impressão e geração de PDFs.
+- **QRCode.react**: Biblioteca para gerar QR Codes.
+- **Lucide Icons**: Biblioteca de ícones para interfaces modernas.
 
-## 📥 Installation
+## Instalação
 
-1. Clone the repository:
- ```bash
- git clone https://github.com/seu_usuario/invoice-generator.git
- cd invoice-generator
- ```
+Para rodar o projeto localmente, siga as instruções abaixo:
 
-2. Install dependencies:
- ```bash
- npm install
- ```
+1. **Clone o repositório:**
 
-3. Start the development server:
- ```bash
- npm start
- ```
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-faturas.git
+   cd projeto-faturas
+   ```
 
-## 🚀 How to Use
+2. **Instale as dependências:**
 
-1. Open the app in your browser.
-2. Enter the invoice number in the input field.
-3. Click the "Create ➡️" button to generate the invoice.
-4. Add products and their quantities.
-5. Click "Print" to generate the invoice PDF.
+   ```bash
+   npm install
+   ```
 
-## 🤝 Contribution
+3. **Inicie o servidor de desenvolvimento:**
 
-Contributions are welcome! Feel free to submit a pull request or open an issue.
+   ```bash
+   npm start
+   ```
 
-## 📄 License
+   O projeto estará disponível em [http://localhost:3000](http://localhost:3000).
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+## Uso
 
----
+1. **Visualização da Fatura:**
+   - Acesse o componente `InvoicePreview` para ver uma prévia da fatura.
 
-<p align="center">
- This project belongs to @Thomas Eduardo. For more information, visit <a href="http://www.thomasnascimento.online">my website</a>.
-</p>
-```
+2. **Gerenciamento de Produtos:**
+   - Utilize o componente `ProductForm` para adicionar ou editar produtos na fatura.
+
+3. **Impressão e PDF:**
+   - Clique no botão de impressão para gerar uma versão imprimível da fatura.
+
+4. **QR Code:**
+   - Visualize o QR Code gerado que está associado à fatura.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja contribuir para o projeto, por favor, siga estas etapas:
+
+1. Fork o repositório.
+2. Crie uma branch para suas alterações (`git checkout -b minha-nova-feature`).
+3. Faça commit das suas alterações (`git commit -am 'Adiciona nova feature'`).
+4. Push para a branch (`git push origin minha-nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
